@@ -74,11 +74,9 @@ A trend is observed where anime titles with fewer episodes and lower member and 
 ## Novelty
 * Used a better significance weghing formula for discounting similarities between entities.
 *
-$$
-w_{u, v}^{\prime}=\left\{\begin{array}{l}
+$$w_{u, v}^{\prime}=\left\{\begin{array}{l}
 \frac{\left|\mathcal{J}_{u v}\right|}{\alpha} \cdot w_{u, v}: \forall_{w_{u, v} \geq 0}, \\
 \frac{\left|\mathcal{J}_{u v}\right|}{\alpha+\max \left(\left|\mathcal{J}_{u v}\right|, \alpha\right)} \cdot w_{u, v}: \forall_{w_{u, v}<0} .
-\end{array}\right.
-$$
+\end{array}\right.$$
 
 where $\left|\mathcal{J}_{u v}\right|$ denotes the cardinality of co=rated item/user set. 
