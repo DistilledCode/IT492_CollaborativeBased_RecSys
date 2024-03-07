@@ -73,10 +73,7 @@ A trend is observed where anime titles with fewer episodes and lower member and 
 * Significance weighing plays a significant role: Weighing the similarity between two entities (based on number of corated) squeezed more accuracy out of neighborhood method and pushed the MSE below 1.40 
 ## Novelty
 * Used a better significance weghing formula for discounting similarities between entities.
-*
-$$w_{u, v}^{\prime}=\left\{\begin{array}{l}
-\frac{\left|\mathcal{J}_{u v}\right|}{\alpha} \cdot w_{u, v}: \forall_{w_{u, v} \geq 0}, \\
-\frac{\left|\mathcal{J}_{u v}\right|}{\alpha+\max \left(\left|\mathcal{J}_{u v}\right|, \alpha\right)} \cdot w_{u, v}: \forall_{w_{u, v}<0} .
-\end{array}\right.$$
+
+* ![image](https://github.com/DistilledCode/IT492_CollaborativeBased_RecSys/assets/107433905/f60a7986-ebdf-4328-acfa-871303750f7c)
 
 where $\left|\mathcal{J}_{u v}\right|$ denotes the cardinality of co=rated item/user set. 
